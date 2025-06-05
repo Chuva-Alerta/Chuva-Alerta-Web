@@ -127,6 +127,13 @@ const menu = document.getElementById('menu')
 const hamburguer = document.getElementById("hamburguer")
 const menuItems = document.querySelectorAll(".menu-item")
 const menuIcon = document.getElementById('menu-icon')
+const btnMensagem = document.getElementById("btn-mensagem")
+const erroMensagem = document.getElementById("mensagem-erro")
+const form = document.getElementById("formulario")
+const inputNome = document.getElementById("nome")
+const inputEmail = document.getElementById("email")
+const inputInteresse = document.getElementById("interesse")
+const inputMensagem = document.getElementById("mensagem")
 
 function iniciarQuiz() {
     indicePerguntaAtual = 0
@@ -228,6 +235,49 @@ hamburguer.addEventListener('click', abrirMenu)
 menuItems.forEach(function (menuItem) {
     menuItem.addEventListener("click", abrirMenu)
 })
+
+btnMensagem.addEventListener("click", function(event){
+    event.preventDefault()
+
+    const nome = inputNome.value.trim()
+    const email = inputEmail.value.trim()
+    const interesse = inputInteresse.value
+    const mensagem = inputMensagem.value.trim()
+    
+    if(nome === "" || email === "" || interesse === "" || mensagem === ""){
+        erroMensagem.textContent = "todos os campos devem ser preenchidos"
+        erroMensagem.style.display = "block"
+        return
+    }else if(nome.length < 3 || nome.length > 50){
+        erroMensagem.textContent = "nome deve ter entre 3 e 50 caracteres"
+        erroMensagem.style.display = "block"
+        return
+    }else if(mensagem.length < 5 || mensagem.length > 500){
+        erroMensagem.textContent = "mensagem deve ter entre 5 e 500 caracteres"
+        erroMensagem.style.display = "block"
+        return
+    }else if(!validacaoEmail(email)){
+        erroMensagem.textContent = "e-mail inválido"
+        erroMensagem.style.display = "block"
+        return
+    }
+
+    form.reset()
+})
+
+function validacaoEmail(email){
+    const partes = email.split("@")
+    if(partes.length === 2 &&
+        partes[0].length > 0 &&
+        partes[1].includes(".") &&
+        partes[1].indexOf(".") > 0 &&
+        partes[1].indexOf(".") < partes[1].length -1
+    ){
+        return true
+    }else{
+        return false
+    }
+}
 
 setInterval(proximoSlide, 5000)
 

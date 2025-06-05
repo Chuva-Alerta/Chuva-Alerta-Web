@@ -124,8 +124,8 @@
             </div>
             <img src="./src/assets/img/Alerta de Inundação e Rota de Evacuação.png" alt="monitor mostrando alerta de enchente com pessoas observando">
         </section>
-    </main>
-    <section class="quiz" id="quiz">
+
+        <section class="quiz" id="quiz">
             <div class="quiz-container">
                 <h2>Teste seu conhecimento</h2>
                 <p>Responda nosso quiz e descubra o quanto você sabe sobre enchentes no Brasil.</p>
@@ -148,6 +148,30 @@
                 </div>
             </div>
         </section>
+
+        <section id="contato" class="contato">
+            <h2>Entre em contato com a gente</h2>
+            <form class="formulario" id="formulario">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="nome">E-mail</label>
+                <input type="email" id="email" name="email" required>
+                <label for="nome">Interesse</label>
+                <select name="interesse" id="interesse" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="implementação">Implementação da solução</option>
+                    <option value="parceria">Parceria</option>
+                    <option value="informação">Mais Informações</option>
+                    <option value="outros">Outros</option>
+                </select>
+                <label for="nome">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" required></textarea>
+                <button type="submit" class="btn-mensagem" id="btn-mensagem">Enviar</button>
+            </form>
+            <p id="mensagem-erro"></p>
+
+        </section>
+    </main>
 
     <footer>
         <a href="#"><img src="./src/assets/img/chuva-alerta-logo.png" alt="logo chuva alerta"></a>
