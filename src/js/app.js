@@ -113,6 +113,7 @@ const perguntas = [
 
 let indicePerguntaAtual = 0
 let pontuacao = 0
+let slideAtual = 0
 
 const pergunta = document.getElementById("pergunta")
 const botoesResposta = document.querySelectorAll(".btn-resposta")
@@ -121,6 +122,7 @@ const containerResultado = document.getElementById("resultado")
 const elementoPontuacao = document.getElementById("pontuacao")
 const explicacao = document.getElementById("explicacao")
 const botaoRefazer = document.getElementById("btn-refazer")
+const slides = document.querySelectorAll('.slide-img')
 
 function iniciarQuiz() {
     indicePerguntaAtual = 0
@@ -197,6 +199,19 @@ botaoRefazer.addEventListener('click', function () {
     iniciarQuiz()
 })
 
+function mostrarSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.remove('active')
+        if (i === index) slide.classList.add('active')
+    })
+}
+
+function proximoSlide() {
+    slideAtual = (slideAtual + 1) % slides.length
+    mostrarSlide(slideAtual)
+}
+
+setInterval(proximoSlide, 5000)
 
 iniciarQuiz()
 
