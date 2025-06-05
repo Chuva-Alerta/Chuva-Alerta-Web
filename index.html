@@ -1,11 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description"
+        content="Chuva Alerta é uma solução inteligente para prever e mitigar enchentes no Brasil, utilizando IoT, IA e imagens de satélite.">
+    <title>Chuva Alerta</title>
+    <link rel="stylesheet" href="./src/css/global.css">
+    <link rel="icon" type="image/png" href="./src/assets/img/logo.png">
 </head>
+
 <body>
-    
+
+    <header class="header-container">
+        <div class="logo">
+            <img src="./src/assets/img/logo.png" alt="logo Chuva Alerta">
+            <h1>Chuva Alerta</h1>
+        </div>
+        <nav class="navbar">
+            <ul class="menu" id="menu">
+                <li class="menu-item"><a href="#problema">Problema</a></li>
+                <li class="menu-item"><a href="#tecnologias">Tecnologias</a></li>
+                <li class="menu-item"><a href="#objetivos">Objetivos</a></li>
+                <li class="menu-item"><a href="#publico">Público-Alvo</a></li>
+                <li class="menu-item"><a href="#beneficios">Benefícios</a></li>
+                <li class="menu-item"><a href="#solucao">Solução</a></li>
+            </ul>
+        </nav>
+        <button class="hamburguer" id="hamburguer">
+            <span class="menu-icon" id="menu-icon">☰</span>
+        </button>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-img">
+                <img src="./src/assets/img/chuva-alerta.png" alt="logo chuva alerta">
+            </div>
+            <div class="hero-conteudo">
+                <div class="hero-texto">
+                    <h2>Proteção Inteligente Contra Enchentes</h2>
+                    <p>Uma solução tecnológica integrada para prever, prevenir e mitigar os impactos das enchentes no
+                        Brasil</p>
+                </div>
+                <a href="#problema" class="hero-btn">Saiba Mais</a>
+            </div>
+        </section>
+        <section id="problema" class="problema">
+            <div class="problema-texto">
+                <h2>O Problema</h2>
+                <p>As enchentes no Brasil devastam vidas e economias, afetando milhões. Comunidades perdem tudo,
+                    enquanto a falta de alertas precoces agrava os danos.</p>
+                <p>Em três décadas, 110 milhões sofreram com inundações e deslizamentos. Infraestruturas destruídas e
+                    famílias desabrigadas exigem soluções urgentes para prevenção e resposta eficaz.</p>
+            </div>
+            <div class="problema-img">
+                <img src="./src/assets/img/enchente.jpg" alt="casas cobertas pela água">
+            </div>
+        </section>
+        <section id="tecnologias" class="tecnologias">
+            <div class="tecnologias-img">
+                <img src="./src/assets/img/tecnologias.png" alt="monitores">
+            </div>
+            <div class="tecnologias-texto">
+                <h2>Tecnologias Utilizadas</h2>
+                <p>Nossa plataforma integra IoT, IA e satélites para prever enchentes com 48h de antecedência. Sensores
+                    monitoram rios 24h, enquanto algoritmos analisam padrões críticos.</p>
+                <p>Imagens espaciais mapeiam riscos com precisão, cruzando dados em tempo real. Tecnologia acessível
+                    protege
+                    comunidades e otimiza recursos públicos contra desastres.</p>
+            </div>
+        </section>
+        <section class="section-container">
+            <div class="textos-container">
+                <div id="objetivos" class="objetivos">
+                    <h2>Nosso Objetivo</h2>
+                    <p>Queremos revolucionar o combate a enchentes no Brasil, reduzindo mortes em 80% até 2028 com
+                        alertas
+                        antecipados e precisos.</p>
+                    <p>Nossa meta é proteger comunidades vulneráveis com 48h de antecedência e melhorar a coordenação
+                        governamental durante emergências hídricas.</p>
+                </div>
+                <div id="publico" class="publico">
+                    <h2>Público-Alvo</h2>
+                    <p>Populações em áreas de risco e comunidades vulneráveis. Mais de 30 milhões de brasileiros vivem
+                        em
+                        áreas
+                        de risco de enchentes e serão beneficiados diretamente.</p>
+                    <p>Defesa Civil e órgãos governamentais. Órgãos públicos terão ferramentas para tomada de decisão
+                        mais
+                        ágil
+                        e eficiente durante emergências.</p>
+                </div>
+            </div>
+        </section>
+        <section id="beneficios" class="beneficios">
+            <div class="beneficios-texto">
+                <h2>Benefícios da Chuva Alerta</h2>
+                <p>Alertas precoces salvam vidas e reduzem deslocamentos emergenciais, enquanto ações preventivas cortam
+                    custos de reconstrução pós-enchente pela metade.</p>
+                <p>Nossa solução integra governo e população em respostas ágeis, transformando o caos em gestão
+                    eficiente de
+                    crises hídricas.</p>
+            </div>
+            <div class="beneficios-img">
+                <img src="./src/assets/img/Rota de evacuação.png" alt="Pessoas observando rotas de evacuação">
+            </div>
+        </section>
+        <section id="solucao" class="solucao">
+            <div class="solucao-texto">
+                <h2>Como Funciona na Prática</h2>
+                <p>Alertas multimídia chegam a todos, mesmo offline, guiando pessoas para segurança com rotas e abrigos
+                    mapeados em tempo real.</p>
+                <p>Painéis inteligentes direcionam recursos públicos estratégicos, transformando emergências em
+                    operações
+                    precisas que salvam vidas e propriedades.</p>
+            </div>
+            <img src="./src/assets/img/Alerta de Inundação e Rota de Evacuação.png" alt="monitor mostrando alerta de enchente com pessoas observando">
+        </section>
+    </main>
+
+    <footer>
+        <a href="#"><img src="./src/assets/img/chuva-alerta-logo.png" alt="logo chuva alerta"></a>
+        <a href="https://www.fiap.com.br"><img src="./src/assets/img/logofiap.png" alt="logo fiap"></a>
+        <p>&copy; 2025 Chuva Alerta - Todos os direitos reservados</p>
+    </footer>
+
 </body>
+
 </html>
