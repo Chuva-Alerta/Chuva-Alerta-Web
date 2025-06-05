@@ -134,6 +134,9 @@ const inputNome = document.getElementById("nome")
 const inputEmail = document.getElementById("email")
 const inputInteresse = document.getElementById("interesse")
 const inputMensagem = document.getElementById("mensagem")
+const iconSol = document.getElementById('icon-sol')
+const iconLua = document.getElementById('icon-lua')
+const iconAzul = document.getElementById('icon-azul')
 
 function iniciarQuiz() {
     indicePerguntaAtual = 0
@@ -278,6 +281,28 @@ function validacaoEmail(email){
         return false
     }
 }
+
+iconSol.addEventListener("click", function(){
+    document.body.classList.remove("blue-mode")
+    document.body.classList.remove("dark-mode")
+})
+
+iconAzul.addEventListener("click", function(){
+
+    const azulMode = document.body.classList.toggle("blue-mode")
+    if(azulMode){
+        document.body.classList.remove("dark-mode")
+    }
+    
+})
+
+iconLua.addEventListener("click", function(){
+
+    const darkMode = document.body.classList.toggle("dark-mode")
+    if(darkMode){
+        document.body.classList.remove("blue-mode")
+    }
+})
 
 setInterval(proximoSlide, 5000)
 
