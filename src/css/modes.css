@@ -1,0 +1,190 @@
+.dark-mode {
+    background: linear-gradient(
+        135deg,
+        #1a1a1a 0%,
+        #2d2d2d 50%,
+        #1a1a1a 100%
+    );
+    color: #e0e0e0;
+    background-attachment: fixed;
+}
+
+
+.dark-mode .header-container {
+    background-color: #3c3b3b;
+    border-bottom: 1px solid #333;
+}
+
+.dark-mode .hero {
+    background-color: #005496;
+}
+
+.dark-mode .navbar a {
+    color: #e0e0e0;
+}
+
+.dark-mode .navbar a:hover {
+    color: #64b5f6;
+}
+
+.dark-mode section:not(:first-child)::before {
+    background: linear-gradient(90deg, transparent, #244662, transparent);
+}
+
+.dark-mode .hero-btn {
+    background-color: #1976d2;
+    color: white;
+}
+
+.dark-mode .hero-btn:hover {
+    background-color: #1565c0;
+}
+
+.dark-mode .quiz-container,
+.dark-mode .pergunta-container,
+.dark-mode .formulario {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .pergunta-container h3{
+    color: #034e87;
+}
+
+.dark-mode .btn-resposta {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+    border-color: #444;
+}
+
+.dark-mode .btn-resposta.correto {
+    background: #d1fae5;
+    border-color: #34d399;
+    color: #065f46;
+}
+
+.dark-mode .btn-resposta.incorreto {
+    background: #fee2e2;
+    border-color: #f87171;
+    color: #b91c1c;
+}
+
+.dark-mode .btn-resposta:hover {
+    background-color: #3d3d3d;
+}
+
+.dark-mode .explicacao,
+.dark-mode #resultado {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+}
+
+.dark-mode .formulario input,
+.dark-mode .formulario select,
+.dark-mode .formulario textarea {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+    border-color: #444;
+}
+
+.dark-mode footer {
+    background-color: #3c3b3b;
+}
+
+.dark-mode .problema-img img,
+.dark-mode .tecnologias-img img,
+.dark-mode .beneficios-img img {
+    filter: brightness(0.8);
+}
+
+.blue-mode {
+    background: linear-gradient(135deg, #accef1 0%, #cee6ff 50%, #759fc7 100%);
+    color: #003366;
+    background-attachment: fixed; 
+}
+
+.blue-mode .header-container {
+    background-color: #0274cb; 
+    border-bottom: 1px solid #003d66;
+}
+
+.blue-mode .hero {
+    background-color: #005496;  
+}
+
+.blue-mode .navbar a {
+    color: #e6f2ff;            
+}
+
+.blue-mode .navbar a:hover {
+    color: #a3d5ff;            
+}
+
+.blue-mode section:not(:first-child)::before {
+    background: linear-gradient(90deg, transparent, #003d66, transparent);
+}
+
+.blue-mode .hero-btn {
+    background-color: #003366;  
+}
+
+.blue-mode .hero-btn:hover {
+    background-color: #002244;  
+}
+
+.blue-mode .quiz-container,
+.blue-mode .pergunta-container,
+.blue-mode .formulario {
+    background-color: #cce5ff;  
+    color: #003366;
+    box-shadow: 0 5px 15px rgba(0, 91, 159, 0.2);
+    border: 1px solid #99ccff;
+}
+
+.blue-mode .btn-resposta {
+    background-color: #e6f2ff;
+    color: #003366;
+    border-color: #99ccff;
+}
+
+.blue-mode .btn-resposta:hover {
+    background-color: #d1e7ff;
+}
+
+.blue-mode .btn-resposta.correto {
+    background: #d1fae5;
+    border-color: #34d399;
+    color: #065f46;
+}
+
+.blue-mode .btn-resposta.incorreto {
+    background: #fee2e2;
+    border-color: #f87171;
+    color: #b91c1c;
+}
+
+.blue-mode .explicacao,
+.blue-mode #resultado {
+    background-color: #d1e7ff;
+    color: #003366;
+}
+
+.blue-mode .formulario input,
+.blue-mode .formulario select,
+.blue-mode .formulario textarea {
+    background-color: #f0f8ff; 
+    color: #003366;
+    border-color: #99ccff;
+}
+
+.blue-mode footer {
+    background-color: #0274cb;
+    color: #e6f2ff;
+}
+
+.blue-mode .problema-img img,
+.blue-mode .tecnologias-img img,
+.blue-mode .beneficios-img img {
+    filter: saturate(1.2) contrast(1.1);
+}

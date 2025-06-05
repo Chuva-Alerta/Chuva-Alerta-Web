@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import "./contato.css";
+@import "./modes.css";
+@import "./quiz.css";
+@import "./sections.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header-container {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 50px;
+    max-height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    color: #3498db;
+}
+
+
+.hamburguer {
+    display: none;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    overflow: hidden;
+    background-color: #005496;
+}
+
+.hero-img {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.hero-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    max-height: 350px;
+    margin-top: 30px;
+}
+
+.hero-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+    padding: 30px 0;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.hero-texto {
+    flex: 1;
+    color: white;
+}
+
+.hero-texto h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero-texto p {
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+.hero-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+
+.hero-btn:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+footer img {
+    height: 50px;
+    width: 50px;
+    margin: 0 1rem 1rem;
+    object-fit: fill;
+}
+
+footer p {
+    margin-top: 1rem;
+}
+
+.icons {
+    position: absolute;
+    top: 90px;
+    right: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 999;
+    background-color: #005496;
+    padding: 10px;
+}
+
+.icon-sol,
+.icon-lua,
+.icon-azul {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.icon-sol:hover,
+.icon-lua:hover,
+.icon-azul:hover {
+    transform: scale(1.1);
+    background-color: rgba(52, 152, 219, 0.2);
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease;
+        background: #2c3e50;
+        color: white;
+        list-style: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        z-index: 998;
+    }
+
+    .hamburguer {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        z-index: 1001;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+        display: block;
+    }
+
+    .menu-item {
+        transition: opacity 0.2s ease;
+    }
+
+    .showMenu {
+        transform: translateY(0);
+    }
+}
+
