@@ -120,6 +120,29 @@
             <img src="./src/assets/img/Alerta de Inundação e Rota de Evacuação.png" alt="monitor mostrando alerta de enchente com pessoas observando">
         </section>
     </main>
+    <section class="quiz" id="quiz">
+            <div class="quiz-container">
+                <h2>Teste seu conhecimento</h2>
+                <p>Responda nosso quiz e descubra o quanto você sabe sobre enchentes no Brasil.</p>
+                <div class="pergunta-container">
+                    <h3 id="pergunta"></h3>
+                    <ul>
+                        <li><button class="btn-resposta"></button></li>
+                        <li><button class="btn-resposta"></button></li>
+                        <li><button class="btn-resposta"></button></li>
+                        <li><button class="btn-resposta"></button></li>
+                    </ul>
+                </div>
+                <div class="explicacao" id="explicacao" style="display: none;"></div>
+                <button id="btn-proximo" class="btn-proximo" style="display: none;">Próxima Pergunta</button>
+
+                <div id="resultado" class="resultado" style="display: none;">
+                    <h3>Quiz Concluído!</h3>
+                    <p>Sua pontuação: <span id="pontuacao"></span></p>
+                    <button class="btn-refazer" id="btn-refazer">Refazer o quiz</button>
+                </div>
+            </div>
+        </section>
 
     <footer>
         <a href="#"><img src="./src/assets/img/chuva-alerta-logo.png" alt="logo chuva alerta"></a>
