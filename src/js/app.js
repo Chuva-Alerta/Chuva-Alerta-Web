@@ -123,6 +123,10 @@ const elementoPontuacao = document.getElementById("pontuacao")
 const explicacao = document.getElementById("explicacao")
 const botaoRefazer = document.getElementById("btn-refazer")
 const slides = document.querySelectorAll('.slide-img')
+const menu = document.getElementById('menu')
+const hamburguer = document.getElementById("hamburguer")
+const menuItems = document.querySelectorAll(".menu-item")
+const menuIcon = document.getElementById('menu-icon')
 
 function iniciarQuiz() {
     indicePerguntaAtual = 0
@@ -210,6 +214,20 @@ function proximoSlide() {
     slideAtual = (slideAtual + 1) % slides.length
     mostrarSlide(slideAtual)
 }
+
+function abrirMenu() {
+    console.log('click');
+    const isOpen = menu.classList.toggle("showMenu")
+    menuIcon.innerText = isOpen ? "✕" : "☰"
+
+    console.log(menuIcon);
+}
+
+hamburguer.addEventListener('click', abrirMenu)
+
+menuItems.forEach(function (menuItem) {
+    menuItem.addEventListener("click", abrirMenu)
+})
 
 setInterval(proximoSlide, 5000)
 
