@@ -157,6 +157,39 @@ footer p {
     margin-top: 1rem;
 }
 
+.icons {
+    position: absolute;
+    top: 90px;
+    right: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 999;
+    background-color: #005496;
+    padding: 10px;
+}
+
+.icon-sol,
+.icon-lua,
+.icon-azul {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.icon-sol:hover,
+.icon-lua:hover,
+.icon-azul:hover {
+    transform: scale(1.1);
+    background-color: rgba(52, 152, 219, 0.2);
+}
+
 @media (max-width: 768px) {
 
     .navbar {
